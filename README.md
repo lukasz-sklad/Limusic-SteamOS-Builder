@@ -11,6 +11,13 @@ The default release of Limusic is compiled for generic x86_64 architectures. Bui
 - **Sandbox Fixes**: Disables WebKitGTK sandbox in Flatpak (`WEBKIT_DISABLE_SANDBOX=1`) to prevent custom URI scheme (`tauri://localhost`) crashes, ensuring the UI loads perfectly.
 - **Flatpak Containerized**: The entire compilation happens cleanly inside the `org.gnome.Sdk//51` Flatpak container. No root access or modifications to your underlying immutable SteamOS are required.
 
+## 🛡️ Safe for SteamOS (Containerized Build)
+One of the biggest challenges of compiling software on the Steam Deck is its immutable root filesystem. 
+This builder **completely bypasses this limitation** by doing 100% of the compilation inside a Flatpak SDK container (`org.gnome.Sdk`). 
+- **No `sudo` or `pacman` required.**
+- **No unlocking the root filesystem.**
+- **Leaves zero mess on your host OS** (all dependencies like Node.js, Rust, and C compilers are downloaded and executed strictly within the isolated sandbox).
+
 ## Requirements
 You only need Flatpak and the GNOME SDK installed on your Steam Deck.
 Open your terminal (Konsole) and run:
