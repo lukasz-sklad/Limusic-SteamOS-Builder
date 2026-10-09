@@ -26,6 +26,12 @@ Open your terminal (Konsole) and run:
 flatpak install flathub org.gnome.Sdk//51 org.gnome.Platform//51
 ```
 
+## 📦 Download Pre-built Package
+If you don't want to compile the application yourself, you can download the fully optimized, pre-built `.flatpak` package directly:
+🔗 **[Download Pre-built Limusic Flatpak (Google Drive)](https://drive.google.com/file/d/1JKyT7GQp28gjzKakA2BKAC3h_PwFsHOV/view?usp=sharing)**
+
+Once downloaded, you can install it by double-clicking the file in Desktop Mode (via Discover), or by running `flatpak install --user /path/to/downloaded/limusic.flatpak` in the terminal.
+
 ## How to Build
 1. Clone this repository (or download the zip).
 2. Open a terminal in the folder.
